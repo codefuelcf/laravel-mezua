@@ -281,3 +281,4 @@ While commiting changes to the repo please use the pattern below for commit mess
 - For updates, message should be ` UPDATED - //Whatever you have updated// `
 - For new features, message should be ` CREATED - //Whatever you have created// `
 - For removals, message should be ` REMOVED - //Whatever you have removed// `
+- For improvements, message should be ` IMPROVED - //Whatever you have improved// `
