@@ -1,0 +1,33 @@
+{
+    "name": "codefuelcf/laravel-mezua",
+    "description": "This is a simple sms package for laravel",
+    "keywords": [
+        "laravel",
+        "sms",
+        "messaging",
+        "codefuel"
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tauseef Shah",
+            "email": "tauseefsshah@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Codefuelcf\\Mezua\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codefuelcf\\Mezua\\MezuaServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
