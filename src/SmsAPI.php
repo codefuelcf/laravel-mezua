@@ -127,26 +127,26 @@ class SmsAPI {
 	 */
 	private static function createSlug(string $slug, string $name)
 	{
-		// If the user hasn't provided with the slug then generate one
+		// If the user hasn't provided a slug then generate one
 		if($slug == NULL)
 		{
-			$APIslug = strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $name));
+			$APIslug = str_replace(' ', '-', strtolower(preg_replace('/[^A-Za-z0-9\-] /', '', $name)));
 
 			// Check if the slug exists
 			$slugExists = SmsApiModel::where('slug', $APIslug)
-									->get();
+									 ->get();
 
 			$slugExists->isEmpty() ? TRUE : $APIslug .= random_int(1, 99);
 
 			return strval($APIslug);
 		}
 
-		// Create the slug from the name of the API
-		$APIslug = strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $slug));
+		// If the user has provided a slug then clean it and use 
+		$APIslug = preg_replace('/[^A-Za-z0-9\-]/', '', $slug);
 
 		// Check if the slug exists
 		$slugExists = SmsApiModel::where('slug', $APIslug)
-								  ->get();
+								 ->get();
 
 		$slugExists->isEmpty() ? TRUE : $APIslug .= random_int(1, 99);
 
