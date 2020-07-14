@@ -1,13 +1,13 @@
 # Laravel Sms Package - Mezua
 
 ## Table of Content
-- [About](##about)
-- [Why Mezua?](##why-mezua)
-- [Installation](##installation)
-- [Basic Usage](##usage)
-    - [Sms Api Usage](###sms-api-usage)
-    - [Sms Usage](###sms-usage)
-- [Contribution](##contribution)
+- [About](#about)
+- [Why Mezua?](#why-mezua)
+- [Installation](#installation)
+- [Basic Usage](#usage)
+    - [Sms Api Usage](#sms-api-usage)
+    - [Sms Usage](#sms-usage)
+- [Contribution](#contribution)
 
 ---
 ## About
