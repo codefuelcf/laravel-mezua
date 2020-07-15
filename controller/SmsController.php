@@ -11,11 +11,11 @@ use App\Http\Controllers\Controller;
 
 class SmsController extends Controller
 {
-	/**
-	 * Send queued smses
-	 */
-	public function sendQueued()
-	{
-		return Sms::sendQueued();
-	}
+    /**
+     * Send queued smses
+     */
+    public function sendQueued()
+    {
+        return Sms::sendQueued();
+    }
 }
