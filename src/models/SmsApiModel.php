@@ -11,25 +11,25 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class SmsApiModel extends Model
 {
-	use SoftDeletes;
+    use SoftDeletes;
 
-	// Base table
-	protected $table = 'sms_api';
+    // Base table
+    protected $table = 'sms_api';
 
-	// Properties for columns
-	protected $casts = [
+    // Properties for columns
+    protected $casts = [
 
-		'data' => 'array',
-		'headers' => 'array'
-		
-	];
+        'data' => 'array',
+        'headers' => 'array'
+        
+    ];
 
-	// Fillable properties
-	protected $fillable = [
-		'name',
-		'url',
-		'type',
-		'data',
-		'headers'
-	];
+    // Fillable properties
+    protected $fillable = [
+        'name',
+        'url',
+        'type',
+        'data',
+        'headers'
+    ];
 }

@@ -10,21 +10,21 @@ use Illuminate\Database\Eloquent\Model;
 
 class SmsModel extends Model
 {
-	// Base table
-	protected $table = 'sms';
+    // Base table
+    protected $table = 'sms';
 
-	// Properties for columns
-	protected $casts = [
+    // Properties for columns
+    protected $casts = [
 
-		'response' => 'array'
-		
-	];
+        'response' => 'array'
+        
+    ];
 
-	// Mapping to SMS API's tables
-	public function api()
-	{
+    // Mapping to SMS API's tables
+    public function api()
+    {
 
-		return $this->belongsTo('Codefuelcf\Mezua\Models\SmsApiModel', 'sms_api_id', 'id');
-		
-	}
+        return $this->belongsTo('Codefuelcf\Mezua\Models\SmsApiModel', 'sms_api_id', 'id');
+        
+    }
 }
